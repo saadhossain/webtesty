@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import About from "./Components/About";
 import Blogs from "./Components/Blogs";
 import ErrorPage from "./Components/ErrorPage";
+import Quizes from "./Components/Quizes";
 import Statistics from "./Components/Statistics";
 import Topics from "./Components/Topics/Topics";
 import Root from "./Layout/Root";
@@ -18,6 +19,7 @@ export const Routes = createBrowserRouter([
             { path: '/statistics', element: <Statistics></Statistics> },
             { path: '/blogs', element: <Blogs></Blogs> },
             { path: '/about', element: <About></About> },
+            {path:'/quize/:id', loader:({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`), element:<Quizes></Quizes>}
         ],
         errorElement: <ErrorPage></ErrorPage>
     }
