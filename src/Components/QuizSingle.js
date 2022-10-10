@@ -11,7 +11,7 @@ const QuizSingle = ({ quiz }) => {
     return (
         <div className='bg-[#D3EAF2] p-5 rounded-lg my-5'>
             <h1 className='text-2xl font-semibold'>{finalQuestion}</h1>
-            <div className='grid grid-cols-2 gap-5 my-2'>
+            <div className='grid md:grid-cols-2 gap-5 my-2'>
                 {options.map((option, idx) => <QuizOptions key={idx} option={option}></QuizOptions>)}
             </div>
         </div>
