@@ -1,5 +1,11 @@
 .home-banner{
     background-image: url(./assests/home-banner.jpg);
     height: 500px;
-    
+}
+@media only screen and (max-width: 767px){
+    .home-banner{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
