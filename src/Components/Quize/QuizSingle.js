@@ -2,8 +2,8 @@ import { EyeIcon } from '@heroicons/react/24/solid';
 import React, { useContext } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { CorrectAnsContext, TotalAnsweredContext, WrongAnsContext } from '../Layout/Root';
-import QuizOptions from './QuizOptions';
+import { CorrectAnsContext, TotalAnsweredContext, WrongAnsContext } from '../../Layout/Root';
+import QuizOptions from '../Quize/QuizOptions';
 
 const QuizSingle = ({ quiz }) => {
     const { question, options, correctAnswer } = quiz;

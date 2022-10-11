@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "./Components/About";
-import Blogs from "./Components/Blogs";
+import Blogs from "./Components/Blogs/Blogs";
 import ErrorPage from "./Components/ErrorPage";
-import Quizes from "./Components/Quizes";
+import Quizes from "./Components/Quize/Quizes";
 import Statistics from "./Components/Statistics";
 import Topics from "./Components/Topics/Topics";
 import Root from "./Layout/Root";

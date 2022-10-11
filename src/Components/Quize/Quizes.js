@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { CorrectAnsContext, TotalAnsweredContext, WrongAnsContext } from '../Layout/Root';
-import QuizSingle from './QuizSingle';
+import { CorrectAnsContext, TotalAnsweredContext, WrongAnsContext } from '../../Layout/Root';
+import QuizSingle from '../Quize/QuizSingle';
 import './Quizes.css';
 
 const Quizes = () => {
