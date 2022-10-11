@@ -1,10 +1,11 @@
 import React from 'react';
 
-const QuizOptions = ({option}) => {
+const QuizOptions = ({option, handleQuizAnswer}) => {
+    
     return (
         <div className='flex gap-2 items-center bg-white p-5 rounded-lg'>
-            <input type="radio" name="Option" id="Option" value={option}/>
-            <label htmlFor="Option">{option}</label>
+            <input onClick={()=> handleQuizAnswer(option)} type="radio" name="option" id="option" value={option}/>
+            <label htmlFor="option">{option}</label>
         </div>
     );
 };
