@@ -40,7 +40,7 @@ const QuizSingle = ({ quiz }) => {
         }
         //Calculate total Answered Question
         if (totalAnswered) {
-            const finalTotal = parseInt(totalAnswered+correct + wrong);
+            const finalTotal = parseInt(totalAnswered + parseInt(correct + wrong));
             setTotalAnswered(finalTotal)
         }
 
