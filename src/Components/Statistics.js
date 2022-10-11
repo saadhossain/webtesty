@@ -7,7 +7,7 @@ const Statistics = () => {
     const quizData = quiz.data;
     console.log(quizData);
     return (
-        <div className='w-10/12 md:w-2/4 mx-auto text-center'>
+        <div className='w-10/12 md:w-2/4 h-[80vh] mx-auto text-center'>
             <h1 className='text-2xl font-bold my-10'>Quiz Statistics</h1>
             <div className='my-10'>
                 <ResponsiveContainer width="100%" height={300}>
